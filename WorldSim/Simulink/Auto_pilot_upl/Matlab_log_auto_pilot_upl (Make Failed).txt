@@ -1,0 +1,161 @@
+*****START Checking model compliance with RTDB ********
+#### Checking model compliance with RTDB.
+### Working on Model "auto_pilot_upl"
+    and RTDB "upl_sim_ap" in project "UPL_AD"
+Init sensor 'Front_VirtualCam' of vehicle 'ego'
+
+VI-WorldSim_Sensor_VirtualCamera of actor 'ego' connected to endpoint tcp://127.0.0.1:30006
+
+Init sensor 'Rear_VirtualCam' of vehicle 'ego'
+
+VI-WorldSim_Sensor_VirtualCamera of actor 'ego' connected to endpoint tcp://127.0.0.1:30007
+
+Init state manager of vehicle 'ego'
+
+VI-WorldSim_State_Manager connected to endpoint tcp://127.0.0.1:30005
+
+VI-WorldSim_Controller endpoint: tcp://127.0.0.1:30000
+## Analyzing sources in the model...
+## Finished analyzing sources in the model...
+## 
+## Analyzing sinks in the model...
+## Finished analyzing sinks in the model...
+Preparing for next run..Done!
+##
+## Model has 15 blocks that are compliant with the selected RTDB. 
+*****END Checking model compliance with RTDB **********
+
+
+*****START Create temporary SimWB Compliant Model******
+*****STOP Create temporary SimWB Compliant Model*******
+
+*****START SimWB Compliant Code Generation ************
+Processing model 'auto_pilot_upl' ...
+Done.
+### Starting build procedure for: auto_pilot_upl
+### Generating code and artifacts to 'Model specific' folder structure
+### Generating code into build folder: C:\VI-grade\VI-WorldSim 2023\Simulink\examples\auto_pilot_upl_grt_rtw
+Init sensor 'Front_VirtualCam' of vehicle 'ego'
+
+VI-WorldSim_Sensor_VirtualCamera of actor 'ego' connected to endpoint tcp://127.0.0.1:30006
+
+Init sensor 'Rear_VirtualCam' of vehicle 'ego'
+
+VI-WorldSim_Sensor_VirtualCamera of actor 'ego' connected to endpoint tcp://127.0.0.1:30007
+
+Init state manager of vehicle 'ego'
+
+VI-WorldSim_State_Manager connected to endpoint tcp://127.0.0.1:30005
+
+VI-WorldSim_Controller endpoint: tcp://127.0.0.1:30000
+Preparing for next run..Done!
+### Invoking Target Language Compiler on auto_pilot_upl.rtw
+### Using System Target File: C:\Program Files\MATLAB\R2022b\rtw\c\grt\grt.tlc
+### Loading TLC function libraries
+.........
+### Initial pass through model to cache user defined code
+............
+### Caching model source code
+...............................................................................
+...............................................................................
+......................................................................
+### Generating TLC interface API.
+...............................................................................
+...............................................................................
+...............................................................................
+....
+### Writing source file auto_pilot_upl_capi.c
+.............................................
+### Writing header file auto_pilot_upl_capi.h
+...............................................................................
+......................................................
+### Writing header file auto_pilot_upl_types.h
+### Writing source file auto_pilot_upl.c
+.
+### Writing header file auto_pilot_upl_private.h
+### Writing header file auto_pilot_upl.h
+### Writing header file rtwtypes.h
+### Writing header file builtin_typeid_types.h
+### Writing header file multiword_types.h
+### Writing header file zero_crossing_types.h
+.
+### Writing header file rtGetInf.h
+### Writing source file rtGetInf.c
+### Writing header file rtGetNaN.h
+### Writing source file rtGetNaN.c
+### Writing header file rt_zcfcn.h
+### Writing source file rt_zcfcn.c
+.
+### Writing header file rt_nonfinite.h
+### Writing source file rt_nonfinite.c
+### Writing header file rtmodel.h
+### Writing source file auto_pilot_upl_data.c
+### Writing header file rt_defines.h
+### TLC code generation complete (took 5.648s).
+..............### Saving binary information cache.
+### Evaluating PostCodeGenCommand specified in the model
+.
+### Processing Template Makefile: C:\Concurrent\MLToolkit\SimWB_Target\simwb_grt.tmf
+### Created makefile C:\VI-grade\VI-WorldSim 2023\Simulink\examples\auto_pilot_upl_grt_rtw\auto_pilot_upl.mk
+### Successful completion of code generation for: auto_pilot_upl
+### Simulink cache artifacts for 'auto_pilot_upl' were created in 'C:\VI-grade\VI-WorldSim 2023\Simulink\examples\auto_pilot_upl.slxc'.
+
+Build Summary
+
+Top model targets built:
+
+Model           Action           Rebuild Reason                 
+================================================================
+auto_pilot_upl  Code generated.  Incremental checksum changed.  
+
+1 of 1 models built (0 models already up to date)
+Build duration: 0h 0m 45.78s
+
+*****END SimWB Compliant Code Generation **********
+
+## Preparing to send the files to the real-time host!
+Warning!!! References to Windows file path(s) detected in model makefile. This may cause build errors.
+Check the following line(s) of auto_pilot_upl.mk
+
+	auto_pilot_upl.mk:419 %.o : C:/VI-grade/VI-WOR~1/Simulink/%.c
+	auto_pilot_upl.mk:435 %.o : C:/VI-grade/VI-WOR~1/Simulink/%.C
+	auto_pilot_upl.mk:445 %.o : C:/VI-grade/VI-WOR~1/Simulink/%.cpp
+
+Attempting to update rules referring to generic targets ...
+Done updating all of the rules!
+
+Possible solutions for any build errors resulting from this issue:
+(1) Place the relevant file(s)/folder(s) in the same directory as the Simulink model before using MLToolkit to generate code for the model.
+(2) Ensure that the relevant file(s)/folder(s) are available in the /usr/local/ccursim/project/RTW.Sources folder for the model. Then, 
+    try commenting out the offending lines from the makefile and rebuilding the code.
+.
+## Transferring auto_pilot_upl.zip file to real-time host...
+## All source files successfully transferred to real-time host. Ready for Make!
+## Running MAKE ........
+
+Error opening property file '.#auto_pilot_upl.mdl' No such file or directory
+|MAKE|
+make[1]: Entering directory `/usr/local/ccursim/projects/__project.UPL_AD/RTW.Sources/auto_pilot_upl_ccurrt/auto_pilot_upl_ccurrt'
+cc -c -DGENSIMWBCODE=1 -O3    -DUSE_RTMODEL -g -D__WORLDSIM_FOR_DRIVESIM -fwrapv -fPIC -DMODEL=auto_pilot_upl -DRT -DNUMST=4 -DTID01EQ=1 -DNCSTATES=2 -DUNIX -DMT=1 -DHAVESTDIO -DMAT_FILE=0 -I. -I.. -I../R2022b/simulink/include -I../R2022b/extern/include -I../R2022b/rtw/c/src -I../R2022b/rtw/c/src/ext_mode/common -I.. -I../auto_pilot_upl_ccurrt -I../R2022b/extern/include -I../R2022b/simulink/include -I../R2022b/rtw/c/src -I../R2022b/rtw/c/src/ext_mode/common  -I/usr/local/ccursim/include     -DNO_CVTSTRUCT  ../R2022b/rtw/c/src/rt_matrx.c
+cc -c -DGENSIMWBCODE=1 -O3    -DUSE_RTMODEL -g -D__WORLDSIM_FOR_DRIVESIM -fwrapv -fPIC -DMODEL=auto_pilot_upl -DRT -DNUMST=4 -DTID01EQ=1 -DNCSTATES=2 -DUNIX -DMT=1 -DHAVESTDIO -DMAT_FILE=0 -I. -I.. -I../R2022b/simulink/include -I../R2022b/extern/include -I../R2022b/rtw/c/src -I../R2022b/rtw/c/src/ext_mode/common -I.. -I../auto_pilot_upl_ccurrt -I../R2022b/extern/include -I../R2022b/simulink/include -I../R2022b/rtw/c/src -I../R2022b/rtw/c/src/ext_mode/common  -I/usr/local/ccursim/include     -DNO_CVTSTRUCT  ../R2022b/rtw/c/src/rt_printf.c
+cc -c -DGENSIMWBCODE=1 -O3    -DUSE_RTMODEL -g -D__WORLDSIM_FOR_DRIVESIM -fwrapv -fPIC -DMODEL=auto_pilot_upl -DRT -DNUMST=4 -DTID01EQ=1 -DNCSTATES=2 -DUNIX -DMT=1 -DHAVESTDIO -DMAT_FILE=0 -I. -I.. -I../R2022b/simulink/include -I../R2022b/extern/include -I../R2022b/rtw/c/src -I../R2022b/rtw/c/src/ext_mode/common -I.. -I../auto_pilot_upl_ccurrt -I../R2022b/extern/include -I../R2022b/simulink/include -I../R2022b/rtw/c/src -I../R2022b/rtw/c/src/ext_mode/common  -I/usr/local/ccursim/include     -DNO_CVTSTRUCT  rt_backsubrr_dbl.c
+cc -c -DGENSIMWBCODE=1 -O3    -DUSE_RTMODEL -g -D__WORLDSIM_FOR_DRIVESIM -fwrapv -fPIC -DMODEL=auto_pilot_upl -DRT -DNUMST=4 -DTID01EQ=1 -DNCSTATES=2 -DUNIX -DMT=1 -DHAVESTDIO -DMAT_FILE=0 -I. -I.. -I../R2022b/simulink/include -I../R2022b/extern/include -I../R2022b/rtw/c/src -I../R2022b/rtw/c/src/ext_mode/common -I.. -I../auto_pilot_upl_ccurrt -I../R2022b/extern/include -I../R2022b/simulink/include -I../R2022b/rtw/c/src -I../R2022b/rtw/c/src/ext_mode/common  -I/usr/local/ccursim/include     -DNO_CVTSTRUCT  rt_forwardsubrr_dbl.c
+cc -c -DGENSIMWBCODE=1 -O3    -DUSE_RTMODEL -g -D__WORLDSIM_FOR_DRIVESIM -fwrapv -fPIC -DMODEL=auto_pilot_upl -DRT -DNUMST=4 -DTID01EQ=1 -DNCSTATES=2 -DUNIX -DMT=1 -DHAVESTDIO -DMAT_FILE=0 -I. -I.. -I../R2022b/simulink/include -I../R2022b/extern/include -I../R2022b/rtw/c/src -I../R2022b/rtw/c/src/ext_mode/common -I.. -I../auto_pilot_upl_ccurrt -I../R2022b/extern/include -I../R2022b/simulink/include -I../R2022b/rtw/c/src -I../R2022b/rtw/c/src/ext_mode/common  -I/usr/local/ccursim/include     -DNO_CVTSTRUCT  rt_lu_real.c
+cc -c -DGENSIMWBCODE=1 -O3    -DUSE_RTMODEL -g -D__WORLDSIM_FOR_DRIVESIM -fwrapv -fPIC -DMODEL=auto_pilot_upl -DRT -DNUMST=4 -DTID01EQ=1 -DNCSTATES=2 -DUNIX -DMT=1 -DHAVESTDIO -DMAT_FILE=0 -I. -I.. -I../R2022b/simulink/include -I../R2022b/extern/include -I../R2022b/rtw/c/src -I../R2022b/rtw/c/src/ext_mode/common -I.. -I../auto_pilot_upl_ccurrt -I../R2022b/extern/include -I../R2022b/simulink/include -I../R2022b/rtw/c/src -I../R2022b/rtw/c/src/ext_mode/common  -I/usr/local/ccursim/include     -DNO_CVTSTRUCT  rt_matrixlib_dbl.c
+cc -c -DGENSIMWBCODE=1 -O3    -DUSE_RTMODEL -g -D__WORLDSIM_FOR_DRIVESIM -fwrapv -fPIC -DMODEL=auto_pilot_upl -DRT -DNUMST=4 -DTID01EQ=1 -DNCSTATES=2 -DUNIX -DMT=1 -DHAVESTDIO -DMAT_FILE=0 -I. -I.. -I../R2022b/simulink/include -I../R2022b/extern/include -I../R2022b/rtw/c/src -I../R2022b/rtw/c/src/ext_mode/common -I.. -I../auto_pilot_upl_ccurrt -I../R2022b/extern/include -I../R2022b/simulink/include -I../R2022b/rtw/c/src -I../R2022b/rtw/c/src/ext_mode/common  -I/usr/local/ccursim/include     -DNO_CVTSTRUCT  auto_pilot_upl_capi.c
+|STDERR|In file included from auto_pilot_upl_capi.c:43:0:
+|STDERR|auto_pilot_upl_private.h:121:2: error: #error Code was generated for compiler with different sized ulong/long. Consider adjusting Test hardware word size settings on the Hardware Implementation pane to match your compiler word sizes as defined in limits.h of the compiler. Alternatively, you can select the Test hardware is the same as production hardware option and select the Enable portable word sizes option on the Code Generation > Verification pane for ERT based targets, which will disable the preprocessor word size checks.
+|STDERR| #error Code was generated for compiler with different sized ulong/long. \
+|STDERR|  ^
+|STDERR|make[1]: *** [auto_pilot_upl_capi.o] Error 1
+make[1]: Leaving directory `/usr/local/ccursim/projects/__project.UPL_AD/RTW.Sources/auto_pilot_upl_ccurrt/auto_pilot_upl_ccurrt'
+|MAKE|
+ccurCheckTestIC.pl::parseICFile : ERROR; can't open input file /usr/local/ccursim/projects/__project.UPL_AD/RTW//auto_pilot_upl/parametersIC.txt : No such file or directoryError using simwb.rtobj/rtwBuild
+
+Error: Unable to Make on real-time host!
+
+Error in simwbTarget
+ 
+Error while evaluating UIControl Callback.
+
+>> 

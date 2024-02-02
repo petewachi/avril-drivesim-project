@@ -1,0 +1,13 @@
+
+Event data is being read from input XML file...
+ -- ERROR -- External DLL Error.
+ -- ERROR --         
+ -- ERROR -- Error loading external dll: crt_simdll
+ -- ERROR -- 
+ -- ERROR -- Load XML
+ -- ERROR -- External DLL Error.
+ -- ERROR --         
+ -- ERROR -- Error loading external dll: crt_simdll
+ -- ERROR -- 
+ -- ERROR -- Load XML
+ -- ERROR -- Unable to read file: C:\VI-grade\VI-WorldSim 2023\Simulink\examples\auto_pilot_upl\SedanCar_drvsim_send_svm.xml

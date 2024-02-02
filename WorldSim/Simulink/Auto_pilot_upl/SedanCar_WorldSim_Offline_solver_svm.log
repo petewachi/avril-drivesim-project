@@ -1,0 +1,31 @@
+
+Event data is being read from input XML file...
+
+Initializing powertrain / driveline...
+Done.
+
+Initializing aero force...
+Done.
+
+Initializing tires...
+Loading road data file... (file=C:/PROGRA~1/VI-grade/VI-CAR~1/acarrt/CARREA~1.CDB/roads.tbl/flat.rdf)
+
+road file total reading time = 0.001s
+
+FLAT road model has been initialized...
+
+Done.
+
+Initializing driver...
+ -- WARNING -- The event is using an infinite driver abort time without circular buffer feature: circular buffer will be activated and it will be set to 10.00 seconds automatically.
+ -- WARNING -- Buffer dimension can be modified by editing the system parameter variable.
+
+Done.
+
+ -- WARNING -- road does not include data required to create a path sensor
+ -- WARNING -- 
+ -- WARNING -- (check for road path/centerline existence and activation)
+ -- WARNING -- 
+ -- WARNING -- 
+ -- WARNING -- Problems Initializing Path Sensor.
+ -- WARNING -- Path Sensor Computation Skipped.

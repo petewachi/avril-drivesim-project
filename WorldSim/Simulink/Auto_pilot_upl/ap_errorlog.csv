@@ -1,0 +1,557 @@
+Timestamp,,Process,,Severity,,Log
+37:01.1,,cfgsrv,,1,,Checking dependencies for test 'WS_UPL_AP' !
+37:01.4,,scheduler,,1,,Loading environment from file 'vidrivesim_conf'
+37:01.4,,scheduler,,1,,VIDRIVESIM_MODEL=/vigrade/vicrt/models/example/SedanCar_drvsim_send_svm.xml
+37:01.4,,scheduler,,1,,VIDRIVESIM_ROAD_DATA_FILE=/vigrade/vicrt/cdb/tracks.cdb/roads.tbl/WS_highway_single_lane_on_off_ramp.rdf
+37:01.4,,scheduler,,1,,VIDRIVESIM_VEHICLE_USER_LOCATION=370.37890625;14.3445873260498
+37:01.4,,scheduler,,1,,VIDRIVESIM_VEHICLE_USER_ORIENTATION=-3.1415922959619;0;0
+37:01.4,,scheduler,,1,,VIDRIVESIM_VEHICLE_INHERIT_IC=0
+37:01.4,,scheduler,,1,,VIDRIVESIM_MANUAL_GEAR=1
+37:01.4,,scheduler,,1,,VIDRIVESIM_ADVSTEER_AUTOSET=1
+37:01.4,,scheduler,,1,,VIDRIVESIM_VEHICLE_INITIAL_SPEED=10
+37:01.4,,scheduler,,1,,VIDRIVESIM_VEHICLE_INITIAL_GEAR=0
+37:01.4,,scheduler,,1,,VIDRIVESIM_VEHICLE_INITIAL_GEAR_AUTOMATIC=1
+37:01.4,,scheduler,,1,,VIDRIVESIM_AUTORESTORE_LIM=
+37:01.4,,scheduler,,1,,VIDRIVESIM_ROLL_WRT_ROAD_LIM=0.5
+37:01.4,,scheduler,,1,,VIDRIVESIM_PITCH_WRT_ROAD_LIM=0.5
+37:01.4,,scheduler,,1,,VIDRIVESIM_VERT_WRT_ROAD_LIM=1
+37:01.4,,scheduler,,1,,VIDRIVESIM_SSLIP_ANG_LIM=2
+37:01.4,,scheduler,,1,,VIDRIVESIM_SSLIP_RATE_LIM=2.14
+37:01.4,,scheduler,,1,,VIDRIVESIM_STORQUE_LIM=200
+37:01.4,,scheduler,,1,,VIDRIVESIM_MINVEL_LIM=-5
+37:01.4,,scheduler,,1,,VIDRIVESIM_AUTORESTORE_NOCHECK=
+37:01.4,,scheduler,,1,,VIDRIVESIM_PATH_SEGMENTS=
+37:01.4,,scheduler,,1,,VIDRIVESIM_USE_VTD=
+37:01.4,,scheduler,,1,,VIDRIVESIM_VICRT_INPUTS_PER_SESSION=
+37:01.4,,scheduler,,1,,VIDRIVESIM_LOCAL_IP=192.168.200.20
+37:01.4,,scheduler,,1,,VIDRIVESIM_MULTICAST_GROUP=225.1.1.1
+37:01.4,,scheduler,,1,,VIDRIVESIM_MULTICAST_PORT=39766
+37:01.4,,scheduler,,1,,VIDRIVESIM_MCAST_ERPM=
+37:01.4,,scheduler,,1,,VIDRIVESIM_MCAST_ETRQ=
+37:01.4,,scheduler,,1,,VIDRIVESIM_CSV_PREFIX=signal_test
+37:01.4,,scheduler,,1,,VIDRIVESIM_CSV_SIGNALS_FILE=/vigrade/vicrt/UPL_Customized/upl_drivesim_vicrt_signals.sig
+37:01.4,,scheduler,,1,,VIDRIVESIM_CSV_CUSTOM_FILE=/vigrade/vicrt/UPL_Customized/upl_custom_RTDB_signals.sig
+37:01.4,,scheduler,,1,,VIDRIVESIM_CSV_BUFFER_FRAMES=
+37:01.4,,scheduler,,1,,VIDRIVESIM_CSV_DEST_STREAM=
+37:01.4,,scheduler,,1,,VIDRIVESIM_CSV_LOG_MODE=1
+37:01.4,,scheduler,,1,,VIDRIVESIM_DISKWRITER_CPU=
+37:01.4,,scheduler,,1,,VIDRIVESIM_CSV_CIRCULAR_BUFFER=
+37:01.4,,scheduler,,1,,VIDRIVESIM_IMOTIONS_STREAM=
+37:01.4,,scheduler,,1,,VIDRIVESIM_IMOTIONS_DEST_STREAM=
+37:01.4,,scheduler,,1,,VIDRIVESIM_IMOTIONS_HEADER=
+37:01.4,,scheduler,,1,,VIDRIVESIM_RES_FILENAME=/vigrade/vicrt/res/SportCar_mxp_Calabogie.res
+37:01.4,,scheduler,,1,,VIDRIVESIM_PHASE_ECAT_MASTER_NUM_AXM=0
+37:01.4,,scheduler,,1,,VIDRIVESIM_STEERING_WHEEL_ENABLE=1
+37:01.4,,scheduler,,1,,VIDRIVESIM_STEERING_WHEEL_PARAMETER_FILE=/vigrade/vicrt/configuration_files/swid_update.json
+37:01.4,,scheduler,,1,,VIDRIVESIM_STEERING_WHEEL_MAX_ANGLE=900
+37:01.4,,scheduler,,1,,VIDRIVESIM_STEERING_WHEEL_MAX_VELOCITY=1000
+37:01.4,,scheduler,,1,,VIDRIVESIM_STEERING_WHEEL_MAX_TORQUE=50
+37:01.4,,scheduler,,1,,VIDRIVESIM_STEERING_WHEEL_MAX_TORQUE_VARIATION=500
+37:01.4,,scheduler,,1,,VIDRIVESIM_KOLLMORGEN_SW_MOTOR_ADDRESS=192.168.222.170
+37:01.4,,scheduler,,1,,VIDRIVESIM_ACTIVE_BRAKE_ENABLE=0
+37:01.4,,scheduler,,1,,VIDRIVESIM_ACTIVE_BRAKE_PARAMETER_FILE=
+37:01.4,,scheduler,,1,,VIDRIVESIM_KOLLMORGEN_BRAKE_MOTOR_ADDRESS=
+37:01.4,,scheduler,,1,,VIDRIVESIM_ACTIVE_BELTS_ENABLE=1
+37:01.4,,scheduler,,1,,VIDRIVESIM_ACTIVE_BELTS_VALVE_NUMBER=1
+37:01.4,,scheduler,,1,,VIDRIVESIM_ACTIVE_BELTS_VALVE_OFFSET=8
+37:01.4,,scheduler,,1,,VIDRIVESIM_ACTIVE_BELTS_PARAMETER_FILE=/vigrade/vicrt/configuration_files/active_belts.json
+37:01.4,,scheduler,,1,,VIDRIVESIM_PHASE_BELT_MOTOR_KT=
+37:01.4,,scheduler,,1,,VIDRIVESIM_ACTIVE_SEAT_ENABLE=1
+37:01.4,,scheduler,,1,,VIDRIVESIM_ACTIVE_SEAT_VALVE_NUMBER=8
+37:01.4,,scheduler,,1,,VIDRIVESIM_ACTIVE_SEAT_VALVE_OFFSET=0
+37:01.4,,scheduler,,1,,VIDRIVESIM_ACTIVE_SEAT_PARAMETER_FILE=/vigrade/vicrt/configuration_files/active_seat.json
+37:01.4,,scheduler,,1,,VIDRIVESIM_SHAKERS_ENABLE=0
+37:01.4,,scheduler,,1,,VIDRIVESIM_SHAKERS_OFFSET=
+37:01.4,,scheduler,,1,,VIDRIVESIM_SHAKERS_PARAMETER_FILE=
+37:01.4,,scheduler,,1,,VIDRIVESIM_CUEING_RAMPDOWN_TIME=
+37:01.4,,scheduler,,1,,VIDRIVESIM_CUEING_RAMPUP_TIME=
+37:01.4,,scheduler,,1,,VIDRIVESIM_CUEING_DEAD_TIME=
+37:01.4,,scheduler,,1,,VIDRIVESIM_CUEING_TEST_SIGNAL_CORRECTION=
+37:01.4,,scheduler,,1,,VIDRIVESIM_CUEING_PLATFORM_TYPE=
+37:01.4,,scheduler,,1,,VIDRIVESIM_CUEING_POSITIONAL=
+37:01.4,,scheduler,,1,,VIDRIVESIM_DIM_IP=
+37:01.4,,scheduler,,1,,VIDRIVESIM_DIM_PORT=26666
+37:01.4,,scheduler,,1,,VIDRIVESIM_DIMHMI_IP=
+37:01.4,,scheduler,,1,,VIDRIVESIM_DIMHMI_PORT=26667
+37:01.4,,scheduler,,1,,VIDRIVESIM_DIM_SENDFREQ=
+37:01.4,,scheduler,,1,,VIDRIVESIM_DIMHMI_SENDFREQ=
+37:01.4,,scheduler,,0,,VIDRIVESIM_DIM_DEBUG=
+37:01.4,,scheduler,,1,,VIDRIVESIM_DIMC_TRAITS=
+37:01.4,,scheduler,,1,,VIDRIVESIM_SCNR_MCASTIP=127.0.0.1
+37:01.4,,scheduler,,1,,VIDRIVESIM_SCNR_MCASTGROUP=225.1.1.2
+37:01.4,,scheduler,,1,,VIDRIVESIM_SCNR_MCASTPORT=33663
+37:01.4,,scheduler,,1,,VIDRIVESIM_SCNR_RTGFILE=
+37:01.4,,scheduler,,1,,VIDRIVESIM_SCNR_INIT_START=
+37:01.4,,scheduler,,1,,VIDRIVESIM_REMOTECRT_IP=
+37:01.4,,scheduler,,1,,VIDRIVESIM_REMOTECRT_CLIENTPORT=
+37:01.4,,scheduler,,1,,VIDRIVESIM_REMOTECRT_SERVERPORT=
+37:01.4,,scheduler,,1,,VIDRIVESIM_RPC_SUBNET=
+37:01.4,,scheduler,,1,,VIDRIVESIM_RPC_CAR_COLLISION=
+37:01.4,,scheduler,,1,,VIDRIVESIM_INPUTS=CUSTOM
+37:01.4,,scheduler,,1,,VIDRIVESIM_HWMAP_CONFIGURATION_FILE=/vigrade/vicrt/configuration_files/hwmap_updated.json
+37:01.4,,scheduler,,1,,VIDRIVESIM_THROTTLE_MAX=
+37:01.4,,scheduler,,1,,VIDRIVESIM_THROTTLE_MIN=
+37:01.4,,scheduler,,1,,VIDRIVESIM_THROTTLE_LAG=
+37:01.4,,scheduler,,1,,VIDRIVESIM_BRAKE_MAX=
+37:01.4,,scheduler,,1,,VIDRIVESIM_BRAKE_MIN=
+37:01.4,,scheduler,,1,,VIDRIVESIM_CLUTCH_MAX=
+37:01.4,,scheduler,,1,,VIDRIVESIM_CLUTCH_MIN=
+37:01.4,,scheduler,,1,,VIDRIVESIM_EXTOBJ_MCASTIP=
+37:01.1,,cfgsrv,,2,,sched.cpp: 3468: NO schedPreProcess: No such file or directory
+37:01.4,,scheduler,,1,,VIDRIVESIM_EXTOBJ_MCAST_GROUP=
+37:01.4,,scheduler,,1,,VIDRIVESIM_EXTOBJ_BASE_FILE=
+37:01.4,,scheduler,,1,,VIDRIVESIM_EXTOBJ_RTDB_CONTROL=
+37:01.4,,scheduler,,1,,VIDRIVESIM_RFPRO_LOCALIP=
+37:01.4,,scheduler,,1,,VIDRIVESIM_RFPRO_REMOTEIP=
+37:01.4,,scheduler,,1,,VIDRIVESIM_RFPRO_LOCALPORT_SEND=0
+37:01.4,,scheduler,,1,,VIDRIVESIM_RFPRO_LOCALPORT_RECV=
+37:01.4,,scheduler,,1,,VIDRIVESIM_RFPRO_REMOTEPORT_SEND=0
+37:01.4,,scheduler,,1,,VIDRIVESIM_RFPRO_REMOTEPORT_RECV=
+37:01.4,,scheduler,,1,,VIDRIVESIM_RFPRO_VEHICLE_WHEELBASE=
+37:01.4,,scheduler,,1,,VIDRIVESIM_RFPRO_VEHICLE_TRACK=
+37:01.4,,scheduler,,1,,VIDRIVESIM_RFPRO_HDV_CG_RIGHT_RANGE=
+37:01.4,,scheduler,,1,,VIDRIVESIM_RFPRO_HDV_CG_REAR_RANGE=
+37:01.4,,scheduler,,1,,VIDRIVESIM_RFPRO_HDV_CG_HEIGHT=
+37:01.4,,scheduler,,1,,VIDRIVESIM_RFPRO_RIDE_HEIGHT=
+37:01.4,,scheduler,,1,,VIDRIVESIM_NVH_IP=
+37:01.4,,scheduler,,1,,VIDRIVESIM_BK_IP=192.168.100.30
+37:01.4,,scheduler,,1,,VIDRIVESIM_BK_PORT=33633
+37:01.4,,scheduler,,1,,VIDRIVESIM_BK_USE_VICRT_DEFAULT=1
+37:01.4,,scheduler,,1,,VIDRIVESIM_BK_VOLUMES_CONTROL=0
+37:01.4,,scheduler,,1,,VIDRIVESIM_MGR_TIMER_MODEL=
+37:01.4,,scheduler,,1,,VIDRIVESIM_PHASE_STEER_OFFSET=
+37:01.4,,scheduler,,1,,VIDRIVESIM_PHASE_NET_NUM=
+37:01.4,,scheduler,,1,,VIDRIVESIM_CUEING_SEND_FREQ=
+37:01.4,,scheduler,,1,,VIDRIVESIM_CUEING_IP=
+37:01.4,,scheduler,,1,,VIDRIVESIM_WSIM_EGONAME=ego
+37:01.4,,scheduler,,1,,VIDRIVESIM_WSIM_SERVICEIP=192.168.100.30
+37:01.4,,scheduler,,1,,VIDRIVESIM_WSIM_SERVICEPORT=8080
+37:01.4,,scheduler,,1,,VIDRIVESIM_WSIM_GHOSTSFILE=
+37:01.4,,scheduler,,1,,VIDRIVESIM_BIO_BIOBOX_IP=
+37:01.4,,scheduler,,1,,VIDRIVESIM_BIO_OUTPUT_DIRECTORY=
+37:01.4,,scheduler,,1,,VIDRIVESIM_BIO_MAT_FILE=
+37:01.4,,scheduler,,1,,VIDRIVESIM_BIO_EDF_FILE=
+37:01.4,,scheduler,,1,,VIDRIVESIM_BIO_MAX_FILE_SIZE=
+37:01.4,,scheduler,,1,,VIDRIVESIM_BIO_ECG_CHANNEL=
+37:01.4,,scheduler,,1,,VIDRIVESIM_MXSTEERING_ETHERCAT_MASTER=
+37:01.4,,scheduler,,1,,VIDRIVESIM_MXSTEERING_DISPLACEMENT_RESTART_TOLERANCE=
+37:01.4,,scheduler,,1,,VIDRIVESIM_MXSTEERING_MAX_POSITION_RATE=
+37:01.4,,scheduler,,1,,VIDRIVESIM_MXSTEERING_MAX_FORCE=
+37:01.4,,scheduler,,1,,VIDRIVESIM_MXSTEERING_MAX_FORCE_RATE=
+37:01.4,,scheduler,,1,,VIDRIVESIM_MXSTEERING_DISPLACEMENT_GAIN=
+37:01.4,,scheduler,,1,,VIDRIVESIM_MXSTEERING_FORCE_GAIN=
+37:01.4,,scheduler,,1,,VIDRIVESIM_MXSTEERING_FORCE_SMOOTHING_TIME=
+37:01.4,,scheduler,,1,,VIDRIVESIM_MXSTEERING_DISPLACEMENT_SMOOTHING_TIME=
+37:01.4,,scheduler,,1,,VIDRIVESIM_MXSTEERING_RACK_TO_PINION_RATIO=
+37:01.4,,scheduler,,1,,VIDRIVESIM_MXSTEERING_DISPLACEMENT_OFFSET=
+37:01.4,,scheduler,,1,,VIDRIVESIM_ACTIVE_BRAKE_MODEL_FILE=
+37:01.4,,scheduler,,1,,VI_DriveSim.Inputs.Control.CSVWRITE_FLAG=1.0
+37:01.4,,scheduler,,1,,VI_DriveSim.Outputs.Cockpit.SteeringWheel.Friction=0.0
+37:01.4,,scheduler,,1,,VI_DriveSim.Inputs.Cockpit.ActiveBelts.Status=1.0
+37:01.4,,scheduler,,1,,VI_DriveSim.Outputs.Cockpit.SteeringWheel.MaxDamping=0.0
+37:01.4,,scheduler,,1,,VI_DriveSim.Outputs.Cockpit.SteeringWheel.TorqueMultiplier=1.0
+37:01.4,,scheduler,,1,,VI_DriveSim.Outputs.Cockpit.SteeringWheel.Damping=0.0
+37:01.4,,scheduler,,1,,VI_DriveSim.Outputs.Cockpit.SteeringWheel.Inertia=0.0
+37:01.4,,scheduler,,1,,VI_DriveSim.Inputs.Cockpit.ActiveSeat.Status=1.0
+37:01.5,,scheduler,,1,,Starting run
+37:01.5,,iodb_bk_1,,1,,_____________________________________________
+37:01.5,,iodb_bk_1,,1,,VI-DriveSim : iodb_bk
+37:01.5,,iodb_bk_1,,1,,_____________________________________________
+37:01.5,,iodb_bk_1,,1,,VI-DriveSim version : 2023.1
+37:01.5,,iodb_bk_1,,1,,iodb_bk version : 2023.1
+37:01.5,,iodb_bk_1,,1,,revision : 63255//tags/release/2023/2023.1/RTM_20230331/software
+37:01.5,,iodb_bk_1,,1,,built on : localhost/31-Mar-23
+37:01.5,,iodb_bk_1,,1,,_____________________________________________
+37:01.5,,iodb_bk_1,,1,,BK port 33633
+37:01.5,,iodb_dashboard_1,,1,,_____________________________________________
+37:01.5,,iodb_dashboard_1,,1,,VI-DriveSim : iodb_dashboard
+37:01.5,,iodb_dashboard_1,,1,,_____________________________________________
+37:01.5,,iodb_dashboard_1,,1,,VI-DriveSim version : 2023.1
+37:01.5,,iodb_dashboard_1,,1,,iodb_dashboard version : !!NOT_DEFINED!!
+37:01.5,,iodb_dashboard_1,,1,,revision : 63255//tags/release/2023/2023.1/RTM_20230331/software
+37:01.5,,iodb_dashboard_1,,1,,built on : localhost/31-Mar-23
+37:01.5,,iodb_dashboard_1,,1,,_____________________________________________
+37:01.5,,iodb_dashboard_1,,1,,Socket created
+37:01.6,,iodb_elab_1,,1,,_____________________________________________
+37:01.6,,iodb_elab_1,,1,,VI-DriveSim : iodb_elab
+37:01.6,,iodb_elab_1,,1,,_____________________________________________
+37:01.6,,iodb_elab_1,,1,,VI-DriveSim version : 2023.1
+37:01.6,,iodb_elab_1,,1,,iodb_elab version : 2023.1
+37:01.6,,iodb_elab_1,,1,,revision : 63255//tags/release/2023/2023.1/RTM_20230331/software
+37:01.6,,iodb_elab_1,,1,,built on : localhost/31-Mar-23
+37:01.6,,iodb_elab_1,,1,,_____________________________________________
+37:01.6,,iodb_elab_1,,1,,Found 8 analog inputs
+37:01.6,,iodb_elab_1,,1,,Found 16 analog outputs
+37:01.6,,iodb_elab_1,,1,,Found 4 digital inputs
+37:01.6,,iodb_elab_1,,1,,Found 0 digital outputs
+37:01.6,,iodb_elab_1,,1,,Found Kollmorgen steering wheel motor drive
+37:01.6,,iodb_elab_1,,1,,Maximum steering wheel angle: 900 [deg]
+37:01.6,,iodb_elab_1,,1,,Maximum steering wheel velocity: 1000 [deg/s]
+37:01.6,,iodb_elab_1,,1,,Maximum steering wheel torque: 50 [N*m]
+37:01.6,,iodb_elab_1,,1,,Maximum steering wheel torque variation: 500 [N*m/s]
+37:01.6,,iodb_hwmap_1,,1,,_____________________________________________
+37:01.6,,iodb_hwmap_1,,1,,VI-DriveSim : iodb_hwmap
+37:01.6,,iodb_hwmap_1,,1,,_____________________________________________
+37:01.6,,iodb_hwmap_1,,1,,VI-DriveSim version : 2023.1
+37:01.6,,iodb_hwmap_1,,1,,iodb_hwmap version : !!NOT_DEFINED!!
+37:01.6,,iodb_hwmap_1,,1,,revision : 63255//tags/release/2023/2023.1/RTM_20230331/software
+37:01.6,,iodb_hwmap_1,,1,,built on : localhost/31-Mar-23
+37:01.6,,iodb_hwmap_1,,1,,_____________________________________________
+37:01.6,,iodb_hwmap_1,,1,,Reading HWMap configuration from /vigrade/vicrt/configuration_files/hwmap_updated.json
+37:01.6,,iodb_hwmap_1,,1,,HWMap configuration: CUSTOM
+37:01.6,,iodb_udp_1,,1,,_____________________________________________
+37:01.6,,iodb_udp_1,,1,,VI-DriveSim : iodb_udp
+37:01.6,,iodb_udp_1,,1,,_____________________________________________
+37:01.6,,iodb_udp_1,,1,,VI-DriveSim version : 2023.1
+37:01.6,,iodb_udp_1,,1,,iodb_udp version : 2023.1
+37:01.6,,iodb_udp_1,,1,,revision : 63255//tags/release/2023/2023.1/RTM_20230331/software
+37:01.6,,iodb_udp_1,,1,,built on : localhost/31-Mar-23
+37:01.6,,iodb_udp_1,,1,,_____________________________________________
+37:01.6,,iodb_udp_1,,1,,Using multicast group address 225.1.1.1
+37:01.6,,iodb_udp_1,,1,,Using multicast port 39766
+37:01.6,,iodb_udp_1,,1,,Using bind address 192.168.200.20
+37:01.6,,iodb_udp_1,,1,,UDP stream configured for GraphSim 20.x
+37:01.6,,iodb_elab_1,,1,,Steering wheel enabled
+37:01.6,,iodb_elab_1,,1,,Active brake disabled
+37:01.6,,iodb_elab_1,,1,,Active seat enabled
+37:01.6,,iodb_elab_1,,1,,Active belts enabled
+37:01.6,,iodb_elab_1,,1,,Bass shakers disabled
+37:01.6,,iodb_elab_1,,1,,RPC server started
+37:01.6,,iodb_elab_1,,1,,Initialization completed
+37:01.7,,iodb_worldsim_1,,1,,_____________________________________________
+37:01.7,,iodb_worldsim_1,,1,,VI-DriveSim : iodb_worldsim
+37:01.7,,iodb_worldsim_1,,1,,_____________________________________________
+37:01.7,,iodb_worldsim_1,,1,,VI-DriveSim version : 2023.1
+37:01.7,,iodb_worldsim_1,,1,,iodb_worldsim version : 2023.1
+37:01.7,,iodb_worldsim_1,,1,,revision : 63255//tags/release/2023/2023.1/RTM_20230331/software
+37:01.7,,iodb_worldsim_1,,1,,built on : localhost/31-Mar-23
+37:01.7,,iodb_worldsim_1,,1,,_____________________________________________
+37:01.7,,vicrt_1,,1,,DriveSim:  vicrt_1 started logging on 127.0.0.1:50000
+37:01.7,,vicrt_1,,1,,========================================
+37:01.7,,vicrt_1,,1,,=            VI-CarRealTime            =
+37:01.7,,vicrt_1,,1,,========================================
+37:01.7,,vicrt_1,,1,,VERSION : 2023.1
+37:01.7,,vicrt_1,,1,,REVISION: 63255//tags/release/2023/2023.1/RTM_20230331/software
+37:01.7,,vicrt_1,,1,,BUILT ON: localhost/31-Mar-23
+37:01.7,,vicrt_1,,1,,========================================
+37:01.7,,vicrt_1,,1,,Event data is being read from input XML file...
+37:01.9,,iodb_worldsim_1,,1,,VI-WorldSim scenario contains 0 ghost cars
+37:01.9,,iodb_worldsim_1,,1,,Taking ownership of 1 cars including ego
+37:01.9,,iodb_worldsim_1,,1,,Connecting to VI-WorldSim for vehicle ego
+37:01.9,,WorldSim Offline,,1,,DriveSim:  WorldSim Offline started logging on 127.0.0.1:50000
+37:01.9,,RTW,,1,,MODEL sound_trigger_test_1 initialized !
+37:01.9,,RTW,,1,,MODEL auto_pilot_upl_1 initialized !
+37:01.9,,vicrt_1,,1,,_____________________________________________
+37:01.9,,vicrt_1,,1,,VI-DriveSim : vicrt
+37:01.9,,vicrt_1,,1,,_____________________________________________
+37:01.9,,vicrt_1,,1,,VI-DriveSim version : 2023.1
+37:01.9,,vicrt_1,,1,,vicrt version : 2023.1
+37:01.9,,vicrt_1,,1,,revision : 63255//tags/release/2023/2023.1/RTM_20230331/software
+37:01.9,,vicrt_1,,1,,built on : localhost/31-Mar-23
+37:01.9,,vicrt_1,,1,,_____________________________________________
+37:01.9,,vicrt_1,,1,,The file drivesim_custom_signals.sig could not be found
+37:01.9,,vicrt_1,,1,,Forced Road Data File to /vigrade/vicrt/cdb/tracks.cdb/roads.tbl/WS_highway_single_lane_on_off_ramp.rdf
+37:01.9,,vicrt_1,,1,,Forcing Vehicle User Location to 370.379
+37:01.9,,vicrt_1,,1,,Forcing Vehicle User Orientation to -3.14159;0;0
+37:01.9,,vicrt_1,,1,,Overriding the initial vehicle speed to 10 [km/h]
+37:01.9,,vicrt_1,,1,,The initial gear will be calculated depending on the speed set
+37:02.0,,iodb_worldsim_1,,1,,Taking control of vehicle ego
+37:02.0,,vicrt_1,,1,,Performing the simulation: SedanCar_drvsim.
+37:02.1,,WorldSim Offline,,1,,VI-WorldSim_Sensor_VirtualCamera of actor 'ego' connected to endpoint tcp://192.168.100.30:30014
+37:02.1,,WorldSim Offline,,1,,Init sensor 'Rear_VirtualCam' of vehicle 'ego'
+37:02.1,,WorldSim Offline,,1,,DriveSim:  WorldSim Offline started logging on 127.0.0.1:50000
+37:02.1,,vicrt_1,,1,,Initializing powertrain / driveline...
+37:02.1,,vicrt_1,,1,,Done.
+37:02.1,,vicrt_1,,1,,Initializing aero force...
+37:02.1,,vicrt_1,,1,,Done.
+37:02.1,,vicrt_1,,1,,Initializing tires...
+37:02.3,,WorldSim Offline,,1,,VI-WorldSim_Sensor_VirtualCamera of actor 'ego' connected to endpoint tcp://192.168.100.30:30015
+37:02.3,,WorldSim Offline,,1,,Init state manager of vehicle 'ego'
+37:02.3,,WorldSim Offline,,1,,DriveSim:  WorldSim Offline started logging on 127.0.0.1:50000
+37:02.3,,vicrt_1,,1,,Loading road data file... (file=/vigrade/vicrt/cdb/tracks.cdb/roads.tbl/WS_highway_single_lane_on_off_ramp.rdf)
+37:02.5,,WorldSim Offline,,1,,VI-WorldSim_State_Manager connected to endpoint tcp://192.168.100.30:30005
+37:03.1,,iodb_dashboard_1,,1,,Registered 91 channels
+37:03.3,,vicrt_1,,1,,loading MESH data file ... file size = 48.26MB
+37:03.3,,vicrt_1,,1,,system memory = 31926MB  /  available memory = 26988MB
+37:04.2,,iodb_worldsim_1,,1,,Connection initialized with endpoint: tcp://192.168.100.20:42251
+37:04.2,,iodb_worldsim_1,,1,,Subscribing for radar messages on endpoint tcp://192.168.100.30:30013 and storing data to WorldSim.ego.Sensors.Radar
+37:04.2,,iodb_worldsim_1,,1,,Subscribing for virtual sensor messages on endpoint tcp://192.168.100.30:30014 and storing data to WorldSim.ego.Sensors.Front_VirtualCam
+37:04.2,,iodb_worldsim_1,,1,,Subscribing for virtual sensor messages on endpoint tcp://192.168.100.30:30015 and storing data to WorldSim.ego.Sensors.Rear_VirtualCam
+37:04.2,,iodb_worldsim_1,,1,,Subscribing for collision messages on endpoint tcp://192.168.100.30:30005 and storing data to WorldSim.ego.Sensors.Collision
+37:04.2,,iodb_worldsim_1,,1,,Subscribing for GPS messages on endpoint tcp://192.168.100.30:30005 and storing data to WorldSim.ego.Sensors.GPS
+37:04.2,,iodb_worldsim_1,,1,,Subscribing for environment messages on endpoint tcp://192.168.100.30:30005 and storing data to WorldSim.Environment
+37:04.6,,vicrt_1,,1,,road file total reading time = 3.82s
+37:04.6,,vicrt_1,,1,,MESH road data file loaded...
+37:04.6,,vicrt_1,,1,,Number of nodes = 542293 / number of elements = 942783
+37:04.8,,vicrt_1,,1,,the geometry of the element 827974 is not defined properly
+37:04.8,,vicrt_1,,1,,cannot compute element bounding box (computation error)
+37:04.8,,vicrt_1,,1,,The element geometry may cause solver convergence problems so it
+37:04.8,,vicrt_1,,1,,will be removed from road actual computations
+37:04.8,,vicrt_1,,1,,BOUNDING BOX = { -412.377
+37:04.8,,vicrt_1,,1,,NODE#400787 = { -412.377
+37:04.8,,vicrt_1,,1,,NODE#400789 = { -412.377
+37:04.8,,vicrt_1,,1,,NODE#435869 = { -412.377
+37:04.8,,vicrt_1,,1,,the geometry of the element 831793 is not defined properly
+37:04.8,,vicrt_1,,1,,cannot compute element bounding box (computation error)
+37:04.8,,vicrt_1,,1,,The element geometry may cause solver convergence problems so it
+37:04.8,,vicrt_1,,1,,will be removed from road actual computations
+37:04.8,,vicrt_1,,1,,BOUNDING BOX = { -395.622
+37:04.8,,vicrt_1,,1,,NODE#438239 = { -395.622
+37:04.8,,vicrt_1,,1,,NODE#403810 = { -395.622
+37:04.8,,vicrt_1,,1,,NODE#438240 = { -395.622
+37:06.3,,vicrt_1,,1,,MESH road total building time = 1.73277s
+37:06.3,,vicrt_1,,1,,The mesh is too big (103.851MB) to write its full information to standard output!
+37:06.3,,vicrt_1,,1,,(writing just statistics)
+37:06.3,,vicrt_1,,1,,====                          MESH DATA INFORMATION                         ====
+37:06.3,,vicrt_1,,1,,number of nodes                 = 542293
+37:06.3,,vicrt_1,,1,,number of elements              = 942783
+37:06.3,,vicrt_1,,1,,number of materials             = 10
+37:06.3,,vicrt_1,,1,,allocated mesh data memory size = 103.851MB
+37:06.3,,vicrt_1,,1,,BOUNDING BOX:  Xmin=    -9296.41  Ymin=    -769.956  Zmin=    -1.18114
+37:06.3,,vicrt_1,,1,,Xmax=     9296.41  Ymax=     1270.11  Zmax=     6.63233
+37:06.3,,vicrt_1,,1,,================================================================================
+37:06.3,,vicrt_1,,1,,hash table memory size = 285.181MB
+37:07.1,,vicrt_1,,2,,material is pointing to non-existent irregularities data
+37:07.1,,vicrt_1,,2,,(material ID = 2 / irregularities data ID = 1)
+37:07.1,,vicrt_1,,2,,material is pointing to non-existent irregularities data
+37:07.1,,vicrt_1,,2,,                                                                                                                                                                                                                                                                                                                                          mmm
+37:07.1,,vicrt_1,,2,,material is pointing to non-existent irregularities data
+37:07.1,,vicrt_1,,2,,(material ID = 4 / irregularities data ID = 1)
+37:07.1,,vicrt_1,,2,,material is pointing to non-existent irregularities data
+37:07.1,,vicrt_1,,2,,(material ID = 6 / irregularities data ID = 1)
+37:07.1,,vicrt_1,,1,,MESH road model has been initialized...
+37:07.3,,vicrt_1,,1,,initializing VI-TIRE Pacejka 96/02 model... OK
+37:07.5,,vicrt_1,,1,,initializing VI-TIRE Pacejka 96/02 model... OK
+37:07.7,,vicrt_1,,1,,initializing VI-TIRE Pacejka 96/02 model... OK
+37:07.9,,vicrt_1,,1,,initializing VI-TIRE Pacejka 96/02 model... OK
+37:07.9,,vicrt_1,,1,,Done.
+37:07.9,,vicrt_1,,1,,Initializing driver...
+37:08.0,,vicrt_1,,2,,The event is using an infinite driver abort time without circular buffer feature: circular buffer will be activated and it will be set to 10.00 seconds automatically.
+37:08.0,,vicrt_1,,2,,Buffer dimension can be modified by editing the system parameter variable.
+37:08.0,,vicrt_1,,1,,Done.
+37:08.0,,vicrt_1,,2,,road does not include data required to create a path sensor
+37:08.0,,vicrt_1,,2,,(check for road path/centerline existence and activation)
+37:08.0,,vicrt_1,,2,,Problems Initializing Path Sensor.
+37:08.0,,vicrt_1,,2,,Path Sensor Computation Skipped.
+37:08.0,,vicrt_1,,1,,Solving for static equilibrium...
+37:08.5,,vicrt_1,,1,,Performing Vehicle Setup...
+37:08.6,,vicrt_1,,1,,Solving for static equilibrium...
+37:09.1,,vicrt_1,,1,,Static equilibrium has been achieved.
+37:09.1,,vicrt_1,,1,,Elapsed Simulation Time:  5.858 (sec).
+37:09.1,,vicrt_1,,1,,Elapsed Clock Time:  0.440 (sec).
+37:09.1,,vicrt_1,,1,,Setup Completed.
+37:09.1,,vicrt_1,,1,,========================================
+37:09.1,,vicrt_1,,1,,=         VI-AdvancedSteering          =
+37:09.1,,vicrt_1,,1,,========================================
+37:09.1,,vicrt_1,,1,,VERSION : 2023.1
+37:09.1,,vicrt_1,,1,,REVISION: 63255//tags/release/2023/2023.1/RTM_20230331/software
+37:09.1,,vicrt_1,,1,,BUILT ON: localhost/31-Mar-23
+37:09.1,,vicrt_1,,1,,========================================
+37:09.1,,vicrt_1,,1,,Initializing steering system...
+37:09.1,,vicrt_1,,1,,OK
+37:09.1,,vicrt_1,,1,,Done.
+37:09.1,,vicrt_1,,1,,Loading input signals to be written by the VI-DriveSim plugin from file drivesim_vicrt_signals.sig
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime input signal VI_CarRealTime.Inputs.Brake_System_General.brk_system_legacy  cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime input signal VI_CarRealTime.Inputs.Brake_System_General.brk_master_cyl_gain_correction  cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime input signal VI_CarRealTime.Inputs.Brake_System_General.brk_master_cyl_front_pressure  cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime input signal VI_CarRealTime.Inputs.Brake_System_General.brk_master_cyl_rear_pressure  cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime input signal VI_CarRealTime.Inputs.Brake_System_General.brk_prop_valve_front_correction  cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime input signal VI_CarRealTime.Inputs.Brake_System_General.brk_prop_valve_rear_correction  cannot be found in the real time database
+37:09.1,,vicrt_1,,1,,The number of active inputs written by the VI-DriveSim plugin is 7
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.Tire_front_left.longitudinal_slip_actual cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.Tire_front_left.lateral_slip_actual cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.Tire_front_left.longitudinal_slip_kinematic_unbounded cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.Tire_front_left.lateral_slip_kinematic_unbounded cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.Tire_front_left.longitudinal_slip_transient_unbounded cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.Tire_front_left.lateral_slip_transient_unbounded cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.Tire_front_left.longitudinal_slip_kinematic_bounded cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.Tire_front_left.lateral_slip_kinematic_bounded cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.Tire_front_left.longitudinal_slip_transient_bounded cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.Tire_front_left.lateral_slip_transient_bounded cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.Tire_front_right.longitudinal_slip_actual cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.Tire_front_right.lateral_slip_actual cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.Tire_front_right.longitudinal_slip_kinematic_unbounded cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.Tire_front_right.lateral_slip_kinematic_unbounded cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.Tire_front_right.longitudinal_slip_transient_unbounded cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.Tire_front_right.lateral_slip_transient_unbounded cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.Tire_front_right.longitudinal_slip_kinematic_bounded cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.Tire_front_right.lateral_slip_kinematic_bounded cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.Tire_front_right.longitudinal_slip_transient_bounded cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.Tire_front_right.lateral_slip_transient_bounded cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.Tire_rear_left.longitudinal_slip_actual cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.Tire_rear_left.lateral_slip_actual cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.Tire_rear_left.longitudinal_slip_kinematic_unbounded cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.Tire_rear_left.lateral_slip_kinematic_unbounded cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.Tire_rear_left.longitudinal_slip_transient_unbounded cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.Tire_rear_left.lateral_slip_transient_unbounded cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.Tire_rear_left.longitudinal_slip_kinematic_bounded cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.Tire_rear_left.lateral_slip_kinematic_bounded cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.Tire_rear_left.longitudinal_slip_transient_bounded cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.Tire_rear_left.lateral_slip_transient_bounded cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.Tire_rear_right.longitudinal_slip_actual cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.Tire_rear_right.lateral_slip_actual cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.Tire_rear_right.longitudinal_slip_kinematic_unbounded cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.Tire_rear_right.lateral_slip_kinematic_unbounded cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.Tire_rear_right.longitudinal_slip_transient_unbounded cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.Tire_rear_right.lateral_slip_transient_unbounded cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.Tire_rear_right.longitudinal_slip_kinematic_bounded cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.Tire_rear_right.lateral_slip_kinematic_bounded cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.Tire_rear_right.longitudinal_slip_transient_bounded cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.Tire_rear_right.lateral_slip_transient_bounded cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.ges_hub_XFORMFL.X cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.ges_hub_XFORMFL.Y cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.ges_hub_XFORMFL.Z cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.ges_hub_XFORMFL.Psi cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.ges_hub_XFORMFL.Theta cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.ges_hub_XFORMFL.Phi cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.hub2cp_XFORMFL.X cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.hub2cp_XFORMFL.Y cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.hub2cp_XFORMFL.Z cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.ges_hub_XFORMFR.X cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.ges_hub_XFORMFR.Y cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.ges_hub_XFORMFR.Z cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.ges_hub_XFORMFR.Psi cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.ges_hub_XFORMFR.Theta cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.ges_hub_XFORMFR.Phi cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.hub2cp_XFORMFR.X cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.hub2cp_XFORMFR.Y cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.hub2cp_XFORMFR.Z cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.ges_hub_XFORMRL.X cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.ges_hub_XFORMRL.Y cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.ges_hub_XFORMRL.Z cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.ges_hub_XFORMRL.Psi cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.ges_hub_XFORMRL.Theta cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.ges_hub_XFORMRL.Phi cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.hub2cp_XFORMRL.X cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.hub2cp_XFORMRL.Y cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.hub2cp_XFORMRL.Z cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.ges_hub_XFORMRR.X cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.ges_hub_XFORMRR.Y cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.ges_hub_XFORMRR.Z cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.ges_hub_XFORMRR.Psi cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.ges_hub_XFORMRR.Theta cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.ges_hub_XFORMRR.Phi cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.hub2cp_XFORMRR.X cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.hub2cp_XFORMRR.Y cannot be found in the real time database
+37:09.1,,vicrt_1,,2,,The VI-CarRealTime output signal VI_CarRealTime.Outputs.hub2cp_XFORMRR.Z cannot be found in the real time database
+37:09.1,,vicrt_1,,1,,The number of active outputs written by the VI-DriveSim plugin is 1324 out of 1400
+37:09.1,,vicrt_1,,1,,RDF offset: (0
+37:09.1,,vicrt_1,,1,,RDF orientation: 3.14159 radians
+37:09.1,,vicrt_1,,1,,STD TIRE REF location: (0
+37:09.1,,vicrt_1,,1,,STD TIRE REF orientation: 3.14159 radians
+37:09.1,,vicrt_1,,1,,Integration step time: 1000 us
+37:09.1,,vicrt_1,,1,,Manual gear activated in sequential mode
+37:09.1,,vicrt_1,,1,,VIDRIVESIM PATH AUTORESTORE NOT ACTIVATED
+37:09.1,,vicrt_1,,2,,No lap sensor data available: only initial state will be saved!
+37:09.1,,vicrt_1,,1,,VIDRIVESIM ROLL AUTORESTORE ACTIVATED: 0.5
+37:09.1,,vicrt_1,,1,,VIDRIVESIM PITCH AUTORESTORE ACTIVATED: 0.5
+37:09.1,,vicrt_1,,1,,VIDRIVESIM VERT AUTORESTORE ACTIVATED: 1
+37:09.1,,vicrt_1,,1,,VIDRIVESIM SLIP ANG AUTORESTORE ACTIVATED: 2
+37:09.1,,vicrt_1,,1,,VIDRIVESIM SLIP ANG VEL AUTORESTORE ACTIVATED: 2.14
+37:09.1,,vicrt_1,,1,,VIDRIVESIM STEERING WHEEL TORQUE LIM: 200
+37:09.1,,vicrt_1,,1,,VIDRIVESIM MIN SPEED LIM: -5
+37:09.1,,vicrt_1,,1,,VIDRIVESIM AUTORESTORE NO CHECK NOT SET: ALL CHECKS ARE DISABLED!
+37:09.1,,vicrt_1,,1,,Performing dynamic simulation...
+37:09.3,,iodb_dashboard_1,,1,,Simulation available
+37:09.3,,iodb_bk_1,,1,,BK iodb send 335 signals
+37:09.3,,iodb_bk_1,,1,,BK SimSound realtime volumes control not activated. Data managed by GUI
+37:09.3,,vicrt_1,,1,,Initializing simulation state
+37:09.3,,vicrt_1,,1,,Steering wheel parameters initialized (friction = 0.1 - damping = 0 - inertia = 0.0320833)
+37:09.3,,vicrt_1,,1,,Shakers parameters initialized (cog_x = 1.33254 - cog_y = 2.39303e-05 - cog_z = 0.626606 - wheelbase = 2.874 - track = 1.598)
+37:09.3,,vicrt_1,,1,,Starting on sector 0 [ initial pathS 0 ]
+37:09.3,,vicrt_1,,1,,Simulation state changed to INITIALIZING SOLVER
+37:09.3,,vicrt_1,,1,,Solver status changed to OK
+37:09.3,,vicrt_1,,1,,Initializing simulation state
+37:09.3,,iodb_elab_1,,1,,The steering motor drive is ready for operation
+37:09.3,,vicrt_1,,1,,Steering wheel parameters initialized (friction = 0.1 - damping = 0 - inertia = 0.0320833)
+37:09.3,,vicrt_1,,1,,Shakers parameters initialized (cog_x = 1.33254 - cog_y = 2.39303e-05 - cog_z = 0.626606 - wheelbase = 2.874 - track = 1.598)
+37:09.3,,vicrt_1,,1,,Solver initialized
+37:09.3,,vicrt_1,,1,,Simulation state changed to WAITING FOR DEVICES
+37:09.3,,vicrt_1,,1,,Solver status changed to PAUSED
+37:09.3,,vicrt_1,,1,,Simulation state changed to READY
+37:09.4,,iodb_dashboard_1,,2,,The signal ADAS.Outputs.ACC.ACC_Target_Speed is not available in the database.
+37:09.4,,iodb_dashboard_1,,2,,The signal ADAS.Outputs.ACC.ACC_Target_Id_Display is not available in the database.
+37:09.4,,iodb_dashboard_1,,2,,The signal ADAS.Outputs.ACC.ACC_Distance_Step is not available in the database.
+37:09.4,,iodb_dashboard_1,,2,,The signal ADAS.Outputs.LDW.LDW_White is not available in the database.
+37:09.4,,iodb_dashboard_1,,2,,The signal ADAS.Outputs.LDW.LDW_Ready is not available in the database.
+37:09.4,,iodb_dashboard_1,,2,,The signal ADAS.Outputs.LDW.LDW_On is not available in the database.
+37:09.4,,iodb_dashboard_1,,2,,The signal ADAS.Outputs.LDW.LDW_On_Left is not available in the database.
+37:09.4,,iodb_dashboard_1,,2,,The signal ADAS.Outputs.LDW.LDW_On_Right is not available in the database.
+37:09.4,,iodb_dashboard_1,,2,,The signal ADAS.Outputs.AEB.AEB_Ready is not available in the database.
+37:09.4,,iodb_dashboard_1,,2,,The signal ADAS.Outputs.AEB.AEB_On is not available in the database.
+37:09.4,,iodb_dashboard_1,,2,,The signal ADAS.Outputs.AEB.AEB_BrakeDemand is not available in the database.
+37:09.4,,iodb_dashboard_1,,2,,The signal ADAS.Outputs.Generic.ADAS_Error is not available in the database.
+37:09.4,,iodb_dashboard_1,,2,,The signal bk_1/enable_sound_notice is not available in the database.
+37:20.5,,cfgsrv,,1,,sched.cpp: 4652: Last task auto_pilot_upl_1 did not finish: overrun at frame 12022 started at :53.33 uSec Running?:Yes
+37:21.8,,cfgsrv,,1,,sched.cpp: 4652: Last task auto_pilot_upl_1 did not finish: overrun at frame 12022 started at :53.33 uSec Running?:Yes
+37:23.6,,cfgsrv,,1,,sched.cpp: 4652: Last task auto_pilot_upl_1 did not finish: overrun at frame 12022 started at :53.33 uSec Running?:Yes
+37:25.7,,cfgsrv,,1,,sched.cpp: 4652: Last task auto_pilot_upl_1 did not finish: overrun at frame 12022 started at :53.33 uSec Running?:Yes
+37:27.5,,cfgsrv,,1,,sched.cpp: 4652: Last task auto_pilot_upl_1 did not finish: overrun at frame 12022 started at :53.33 uSec Running?:Yes
+37:29.8,,cfgsrv,,1,,sched.cpp: 4652: Last task auto_pilot_upl_1 did not finish: overrun at frame 12022 started at :53.33 uSec Running?:Yes
+37:31.5,,cfgsrv,,1,,sched.cpp: 4652: Last task auto_pilot_upl_1 did not finish: overrun at frame 12022 started at :53.33 uSec Running?:Yes
+37:33.1,,cfgsrv,,1,,sched.cpp: 4652: Last task auto_pilot_upl_1 did not finish: overrun at frame 12022 started at :53.33 uSec Running?:Yes
+37:35.5,,vicrt_1,,1,,Restart request
+37:35.5,,vicrt_1,,1,,Simulation state changed to RUNNING
+37:35.5,,vicrt_1,,1,,Solver status changed to STARTED
+37:34.7,,cfgsrv,,1,,sched.cpp: 4652: Last task auto_pilot_upl_1 did not finish: overrun at frame 12022 started at :53.33 uSec Running?:Yes
+37:35.9,,cfgsrv,,1,,sched.cpp: 4652: Last task auto_pilot_upl_1 did not finish: overrun at frame 12022 started at :53.33 uSec Running?:Yes
+37:37.5,,cfgsrv,,1,,sched.cpp: 4652: Last task auto_pilot_upl_1 did not finish: overrun at frame 12022 started at :53.33 uSec Running?:Yes
+37:39.1,,cfgsrv,,1,,sched.cpp: 4652: Last task auto_pilot_upl_1 did not finish: overrun at frame 12022 started at :53.33 uSec Running?:Yes
+37:41.2,,cfgsrv,,1,,sched.cpp: 4652: Last task auto_pilot_upl_1 did not finish: overrun at frame 12022 started at :53.33 uSec Running?:Yes
+37:42.9,,cfgsrv,,1,,sched.cpp: 4652: Last task auto_pilot_upl_1 did not finish: overrun at frame 12022 started at :53.33 uSec Running?:Yes
+37:44.0,,cfgsrv,,1,,sched.cpp: 4652: Last task auto_pilot_upl_1 did not finish: overrun at frame 12022 started at :53.33 uSec Running?:Yes
+37:45.4,,cfgsrv,,1,,sched.cpp: 4652: Last task auto_pilot_upl_1 did not finish: overrun at frame 12022 started at :53.33 uSec Running?:Yes
+37:47.5,,cfgsrv,,1,,sched.cpp: 4652: Last task auto_pilot_upl_1 did not finish: overrun at frame 12022 started at :53.33 uSec Running?:Yes
+37:49.2,,cfgsrv,,1,,sched.cpp: 4652: Last task auto_pilot_upl_1 did not finish: overrun at frame 12022 started at :53.33 uSec Running?:Yes
+37:50.8,,cfgsrv,,1,,sched.cpp: 4652: Last task auto_pilot_upl_1 did not finish: overrun at frame 12022 started at :53.33 uSec Running?:Yes
+37:52.7,,cfgsrv,,1,,sched.cpp: 4652: Last task auto_pilot_upl_1 did not finish: overrun at frame 12022 started at :53.33 uSec Running?:Yes
+37:54.5,,cfgsrv,,1,,sched.cpp: 4652: Last task auto_pilot_upl_1 did not finish: overrun at frame 12022 started at :53.33 uSec Running?:Yes
+37:56.1,,cfgsrv,,1,,sched.cpp: 4652: Last task auto_pilot_upl_1 did not finish: overrun at frame 12022 started at :53.33 uSec Running?:Yes
+37:58.3,,cfgsrv,,1,,sched.cpp: 4652: Last task auto_pilot_upl_1 did not finish: overrun at frame 12022 started at :53.33 uSec Running?:Yes
+37:59.9,,cfgsrv,,1,,sched.cpp: 4652: Last task auto_pilot_upl_1 did not finish: overrun at frame 12022 started at :53.33 uSec Running?:Yes
+38:01.8,,cfgsrv,,1,,sched.cpp: 4652: Last task auto_pilot_upl_1 did not finish: overrun at frame 12022 started at :53.33 uSec Running?:Yes
+38:03.5,,cfgsrv,,1,,sched.cpp: 4652: Last task auto_pilot_upl_1 did not finish: overrun at frame 12022 started at :53.33 uSec Running?:Yes
+38:05.4,,cfgsrv,,1,,sched.cpp: 4652: Last task auto_pilot_upl_1 did not finish: overrun at frame 12022 started at :53.33 uSec Running?:Yes
+38:07.4,,cfgsrv,,1,,sched.cpp: 4652: Last task auto_pilot_upl_1 did not finish: overrun at frame 12022 started at :53.33 uSec Running?:Yes
+38:09.6,,cfgsrv,,1,,sched.cpp: 4652: Last task auto_pilot_upl_1 did not finish: overrun at frame 12022 started at :53.33 uSec Running?:Yes
+38:11.6,,cfgsrv,,1,,sched.cpp: 4652: Last task auto_pilot_upl_1 did not finish: overrun at frame 12022 started at :53.33 uSec Running?:Yes
+38:13.7,,cfgsrv,,1,,sched.cpp: 4652: Last task auto_pilot_upl_1 did not finish: overrun at frame 12022 started at :53.33 uSec Running?:Yes
+38:16.0,,cfgsrv,,1,,sched.cpp: 4652: Last task auto_pilot_upl_1 did not finish: overrun at frame 12022 started at :53.33 uSec Running?:Yes
+38:18.4,,cfgsrv,,1,,sched.cpp: 4652: Last task auto_pilot_upl_1 did not finish: overrun at frame 12022 started at :53.33 uSec Running?:Yes
+38:21.3,,cfgsrv,,1,,sched.cpp: 4652: Last task auto_pilot_upl_1 did not finish: overrun at frame 12022 started at :53.33 uSec Running?:Yes
+38:24.3,,cfgsrv,,1,,sched.cpp: 4652: Last task auto_pilot_upl_1 did not finish: overrun at frame 12022 started at :53.33 uSec Running?:Yes
+38:26.1,,vicrt_1,,1,,Received an external stop request - stopping simulation
+38:26.1,,vicrt_1,,1,,Simulation state changed to STOPPING DEVICES
+38:26.1,,vicrt_1,,1,,Solver status changed to STOPPED
+38:26.1,,vicrt_1,,1,,An external-code end condition was triggered: simulation
+38:26.1,,vicrt_1,,1,,terminated prior to simulation abort time.
+38:27.1,,vicrt_1,,1,,Simulation state changed to STOPPED
+38:27.1,,vicrt_1,,1,,A test stop request has been sent to SimWB
+38:27.1,,vicrt_1,,1,,======================================
+38:27.1,,vicrt_1,,1,,=           VI-CarRealTime           =
+38:27.1,,vicrt_1,,1,,=    VEHICLE SIMULATION STATISTICS   =
+38:27.1,,vicrt_1,,1,,======================================
+38:27.1,,vicrt_1,,1,,--- Simulation Statistics ---
+38:27.1,,vicrt_1,,1,,>> LAP TIME           = 50.552000 sec
+38:27.1,,vicrt_1,,1,,>> LAT ACCEL MAX      = 0.000186 G
+38:27.1,,vicrt_1,,1,,>> LAT ACCEL MIN      = -0.000173 G
+38:27.1,,vicrt_1,,1,,>> LON ACCEL MAX      = -0.000382 G
+38:27.1,,vicrt_1,,1,,>> LON ACCEL MIN      = -0.001760 G
+38:27.1,,vicrt_1,,1,,>> LON SPEED MAX      = 0.583325 km/h
+38:27.1,,vicrt_1,,1,,>> LON SPEED MIN      = 0.285189 km/h
+38:27.1,,vicrt_1,,1,,>> LON SPEED AVG      = 0.410239 km/h
+38:27.1,,vicrt_1,,1,,>> STEERING MAX       = -0.512750 deg
+38:27.1,,vicrt_1,,1,,>> STEERING MIN       = -0.617430 deg
+38:27.1,,vicrt_1,,1,,Writing output to file. Please Wait ...
+38:27.1,,scheduler,,1,,Test complete!
+38:27.1,,vicrt_1,,1,,Terminating upon signal request: SIGINT.
+38:27.1,,iodb_dashboard_1,,1,,Terminating iodb_dashboard...
+38:26.3,,cfgsrv,,1,,sched.cpp: 4652: Last task auto_pilot_upl_1 did not finish: overrun at frame 12022 started at :53.33 uSec Running?:Yes
+38:27.2,,iodb_worldsim_1,,1,,Program execution finished!
+38:27.2,,iodb_worldsim_1,,1,,A test stop request has been sent to SimWB
+38:27.3,,iodb_dashboard_1,,1,,Program execution finished!
+38:26.7,,cfgsrv,,2,,sched.cpp: 2269: NO schedPostProcess: No such file or directory
+38:27.6,,vicrt_1,,1,,Elapsed Simulation Time:  50.552 (sec).
+38:27.6,,vicrt_1,,1,,Elapsed Clock Time:  16.850 (sec).
+38:27.6,,vicrt_1,,1,,Computational Efficiency:  3.000 (sim. sec)/(sec).
+38:27.6,,vicrt_1,,1,,Simulation is complete.
