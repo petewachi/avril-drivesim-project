@@ -1,0 +1,268 @@
+---
+title: "ThesisDataAnalysis"
+author: "Pete"
+date: "2024-02-18"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r Load Libraries, warning=FALSE}
+library(readxl)
+library(readr)
+library(plyr)
+library(dplyr)
+library(lubridate)
+library(data.table)  
+library(tidyverse)
+
+library('RHRV') #Heart Rate Analysis
+
+my_options <- options(digits.secs = 3) #for time in millisecond
+
+#sim_freq <- 1000
+HR_freq <- 64
+EDA_freq <- 4
+eye_freq <- 125
+
+target_freq <- 4
+
+```
+
+```{r Helper Func}
+
+replaceColNamePattern <- function(df, pattern, replace){
+   names(df) <- gsub(pattern, replace, names(df))
+   df
+}
+
+```
+
+```{r Load Data, eval=FALSE, include=FALSE}
+test_type <- "pilot"
+design <- "X"
+group <- "A"
+
+scenario_list <- data.frame(scenario = c("1", "2", "3","4"))
+scenario_list$test <- paste0(design,group,scenario_list$scenario)
+scenario_list$path <- paste0("./Data/",test_type,"_",scenario_list$test,"/")
+
+#data_path <- paste0("./Data/",test_type,"_",scenario_list[[1]][2],"/")
+for (i in 1:length(folder_list)-1){
+  
+  
+  file_name <- list.files(path = scenario_list$path[i] ,pattern = "\\.csv$")
+  file_date <- substr(file_name, 8, 17)
+  file_time <- substr(file_name, 19, 26)
+  start_date_time<- as.POSIXct(paste(file_date,file_time), format = "%Y.%m.%d %H.%M.%OS",origin=as.POSIXct("1970-01-01", tz="EST"), tz="EST")
+  
+  if (length(file_name) >0) {
+    tempData <- read.csv(paste0(scenario_list$path[i],file_name),header=TRUE, sep=";", dec=".", stringsAsFactors=FALSE)
+    data <- data.frame(test = scenario_list$test[i],
+                       data = tempData)
+  }
+  rm(tempData)
+}
+```
+
+``` {r}
+filter_participant_ID <- 5037
+
+participant_assignment_all <- read_excel("Experiment Assignment.xlsx",sheet = "Participant ID")
+participant_assignment_all <- participant_assignment_all[participant_assignment_all[, "Status"]=="Completed", ]
+participant_assignment <- participant_assignment_all[participant_assignment_all[, "participant_ID"]==filter_participant_ID, ]
+
+  
+```
+
+```{r}
+HR_list <- data.frame(file = list.files(path = "./HRData",pattern = "\\.zip$"))
+HR_list$time <- sapply(str_split(tools::file_path_sans_ext(HR_list$file),"_"), `[`, 1)
+HR_list$time <- as.POSIXct(as.numeric(HR_list$time), format = "%Y.%m.%d %H.%M.%OS",origin=as.POSIXct("1970-01-01", tz="GMT"), tz="EST")
+HR_list$participant_ID <- as.numeric(sapply(str_split(tools::file_path_sans_ext(HR_list$file),"_"), `[`, 2))
+HR_list <- HR_list[HR_list[, "participant_ID"]==filter_participant_ID, ]
+```
+
+
+```{r Load Simulation Data}
+
+
+sim_list <- data.frame(dir = list.dirs(path = "./SimData"))
+sim_list$participant_ID_path <- lapply(str_split(sim_list$dir, "/"),head, n=3)
+sim_list$folderSplit <- lapply(str_split(sim_list$dir, "_"),tail, n=4)
+sim_list <- sim_list[which(sapply(sapply(sim_list[,"folderSplit",drop=F],"[",),length)>1),]
+
+sim_list$design <- NA
+sim_list$group <- NA
+sim_list$scenario <- NA
+sim_list$participant_ID <- NA
+sim_list$test_start_date_time <- NA
+
+combined_data = data.frame()
+for (i in 1:length(sim_list$dir)){
+  
+  # if (length(sim_list$participant_ID_path[[i]])>=length(sim_list$folderSplit[[i]])) {next}
+  sim_list$participant_ID[i] <- sim_list$participant_ID_path[[i]][3]
+  
+  sim_list$design[i] <-  substr(sim_list$folderSplit[[i]][2],1,2)
+  
+  if (sim_list$design[i] == "00"){ #Test drive
+    sim_list$group[i] <- "00"
+    sim_list$scenario[i] <- "00"
+  }
+  else {
+  
+  sim_list$group[i] <-  substr(sim_list$folderSplit[[i]][1],1,1)
+  sim_list$scenario[i] <- substr(sim_list$folderSplit[[i]][1],2,2)
+
+  }
+  
+  
+  folder_name <- sim_list$dir[i]
+  file_names <- as.list(list.files(path = folder_name,pattern = "\\.csv$"))
+  file_date <- sim_list$folderSplit[[i]][3]
+  file_time <- sim_list$folderSplit[[i]][4]
+  sim_list$test_start_date_time[i] <- as.POSIXct(paste(file_date,file_time), format = "%Y.%m.%d %H.%M.%OS",origin=as.POSIXct("1970-01-01", tz="EST"), tz="EST")
+
+  if (sim_list$participant_ID[i] != filter_participant_ID) {next}
+  
+  for (file_name in file_names) {
+    tempData <- read.csv(paste0(folder_name,"/",file_name),header=TRUE, sep=";", dec=".", stringsAsFactors=FALSE)
+    tempData$design <- sim_list$design[i]
+    tempData$group <- sim_list$group[i]
+    tempData$scenario <- sim_list$scenario[i]
+    tempData$date_time <- sim_list$test_start_date_time[i]+(tempData$STEP/sim_freq)
+    tempData$participant_ID = sim_list$participant_ID[i]
+    combined_data <- rbind.data.frame(combined_data,tempData)
+    
+    
+    
+    
+    
+    
+  }
+  #rm(tempData)
+}
+
+
+sim_list <- subset(sim_list, select = -c(participant_ID_path, folderSplit))
+
+```
+
+```{r Prep Data, eval=FALSE, include=FALSE}
+#first_step <- max(combined_data[which(combined_data$VI_DriveSim.Inputs.Control.VICRT_RESTART_REQ>0),1])
+
+#Extract driver_performance_data
+driver_performance <- combined_data[combined_data["Driver_Performance.inputs.trigger_ID"]>0, ] %>%
+  select(STEP, starts_with("Driver_Performance."),design,group,scenario,date_time)
+
+
+```
+
+```{r Find Responses}
+
+
+beginSteps <- aggregate(STEP ~ + design + group + scenario + Driver_Performance.inputs.trigger_ID, data = combined_data[which(combined_data$Driver_Performance.inputs.trigger_ID > 0),], FUN = min)
+names(beginSteps)[length(beginSteps)] <- "triggerBeginSTEP"
+lastSteps <- aggregate(STEP ~ + design + group + scenario + Driver_Performance.inputs.trigger_ID, data = combined_data[which(combined_data$Driver_Performance.inputs.trigger_ID > 0),], FUN = max)
+names(lastSteps)[length(lastSteps)] <- "triggerLastSTEP"
+
+triggerSteps <- inner_join(beginSteps, lastSteps, by = c("design","group","scenario","Driver_Performance.inputs.trigger_ID"))
+rm(beginSteps,lastSteps)
+
+addmargin = FALSE
+if (addmargin) {
+#add margin to evaluate data after trigger
+  after_trigger_margin_step = 20000 #20 seconds after (alert) trigger launch
+  extendingTriggerSteps <- triggerSteps[triggerSteps$Driver_Performance.inputs.trigger_ID==3,]
+  
+  for (i in length(extendingTriggerSteps)) {
+    combined_data$Driver_Performance.inputs.trigger_ID[which(combined_data$design == extendingTriggerSteps$design[i] & combined_data$group == extendingTriggerSteps$group[i] & combined_data$scenario == extendingTriggerSteps$scenario[i] &  combined_data$STEP>= extendingTriggerSteps$triggerBeginSTEP[i] & combined_data$STEP <= extendingTriggerSteps$triggerBeginSTEP[i]+after_trigger_margin_step)] <- 3
+  }
+}
+
+trigger_response <- combined_data[combined_data["Driver_Performance.inputs.trigger_ID"]>0, ]#%>%
+  # select(STEP, design,group,scenario,date_time, Driver_Performance.inputs.trigger_ID,ends_with("reaction_time"), ends_with("reaction_detected"))
+  # select(STEP, design,group,scenario,date_time, starts_with("Driver_Performance."), contains("velocit"),contains("acceleration"))
+
+trigger_response <- replaceColNamePattern(trigger_response,"Driver_Performance.inputs.","")
+trigger_response <- replaceColNamePattern(trigger_response,"Driver_Performance.outputs.","")
+
+reaction_types <- c("brake","steering","indicator")
+
+driver_reactions <- data.frame()
+for (i in 1:length(reaction_types)) {
+  reaction_type <- reaction_types[i]
+  detected_response <- trigger_response[trigger_response[paste0(reaction_type,".reaction_detected")]==1,]
+  
+  if (length(detected_response>0)){
+    
+    detected_response <- detected_response %>%
+      distinct(trigger_ID,scenario, .keep_all=TRUE)
+    detected_response$reaction_type <- reaction_type
+    detected_response$reaction_time <- detected_response[[paste0(reaction_type,".reaction_time")]]
+    
+    driver_reactions <- rbind.data.frame(driver_reactions,detected_response)
+
+  }
+  rm(detected_response)
+}
+
+driver_reactions <- driver_reactions %>%
+  select(STEP,participant_ID, design,group,scenario,date_time, trigger_ID,contains("reaction"))
+
+
+# driver_responses[["scenario"]] <- rep(0, length(driver_responses$reaction_type))
+# driver_responses[["trigger_ID"]] <- rep(0, length(driver_responses$reaction_type))
+# driver_responses[["reaction_time"]] <- rep(0, length(driver_responses$reaction_type))
+#     driver_responses[["scenario"]][i] <- list(detected_response$Driver_Performance.inputs.trigger_ID)
+#     driver_responses[["trigger_ID"]][i] <- list(detected_response$Driver_Performance.inputs.trigger_ID)
+#     driver_responses[["reaction_time"]][i] <- detected_response[paste0("Driver_Performance.outputs.",reaction_type,".reaction_time")]
+
+```
+
+```{r Measurements}
+#braking
+MaxBrakeAccel <- aggregate(brake.Longitudinal_Accelerations ~ + participant_ID + design + group + scenario + trigger_ID, data = trigger_response[which(trigger_response$brake.reaction_detected==1),], FUN = min) #min because braking acceleration is negative
+names(MaxBrakeAccel)[length(MaxBrakeAccel)] <- "Max_Brake_Acceleration"
+
+#steering
+MaxSteerAccelNeg <- aggregate(steering.Lateral_Accelerations ~ + participant_ID + design + group + scenario + trigger_ID, data = trigger_response[which(trigger_response$steering.reaction_detected==1),], FUN = min) #min for acceleration that is negative
+names(MaxSteerAccelNeg)[length(MaxSteerAccelNeg)] <- "Max_lateral_Acceleration_Neg"
+MaxSteerAccelPos <- aggregate(steering.Lateral_Accelerations ~ + participant_ID + design + group + scenario + trigger_ID, data = trigger_response[which(trigger_response$steering.reaction_detected==1),], FUN = max)
+names(MaxSteerAccelPos)[length(MaxSteerAccelPos)] <- "Max_lateral_Acceleration_pos"
+MaxSteerAccel <- left_join(MaxSteerAccelNeg, MaxSteerAccelPos, by = c("group","scenario","trigger_ID"))
+rm(MaxSteerAccelPos,MaxSteerAccelNeg)
+
+#AEB
+AEBMinDistance <- aggregate(ADAS.Outputs.AEB.Minimum_distance ~ + participant_ID + design + group + scenario + Driver_Performance.inputs.trigger_ID, data = combined_data[which(combined_data$ADAS.Outputs.AEB.AEB_Output_Active==1),], FUN = min)
+AEBMinTimeThreshold <- aggregate(ADAS.Outputs.AEB.AEB_TimeToCollision_Threshold ~ + design + group + scenario + Driver_Performance.inputs.trigger_ID, data = combined_data[which(combined_data$ADAS.Outputs.AEB.AEB_Output_Active==1),], FUN = min)
+
+
+#collisions
+Collisions = combined_data[which(combined_data$WorldSim.ego.Sensors.Collision.Status==1),]
+if (length(Collisions$STEP)>0){
+  Collisions$gap <- c(NA, with(Collisions, STEP[-1] - STEP[-nrow(Collisions)]))
+  Collisions <- Collisions[which(Collisions$gap>500),]
+}
+```
+
+```{r Down Sampling}
+# Set the original and target sampling rates
+original_sampling_rate <- 1000
+target_sampling_rate <- 8
+
+# Calculate the downsampling factor
+downsample_factor <- original_sampling_rate / target_sampling_rate
+
+# Downsample the data
+downsampled_data <- combined_data[seq(1, nrow(combined_data), by = downsample_factor), ]
+# Print the length of the original and downsampled data
+cat("Original data length:", length(combined_data[[1]]), "\n")
+cat("Downsampled data length:", length(downsampled_data[[1]]), "\n")
+
+
+```

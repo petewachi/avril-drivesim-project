@@ -1,0 +1,19 @@
+<svg width="254" height="254" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+ <title>gg_target</title>
+ <desc>Created with Sketch.</desc>
+ <defs>
+  <polygon points="0 37.9853277 179.928647 37.9853277 179.928647 -2.84217094e-14 0 -2.84217094e-14" id="path-1"/>
+  <filter id="svg_3_blur">
+   <feGaussianBlur in="SourceGraphic" stdDeviation="0.4"/>
+  </filter>
+  <filter id="svg_4_blur">
+   <feGaussianBlur in="SourceGraphic" stdDeviation="0.4"/>
+  </filter>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <ellipse fill="none" cx="127" cy="127" id="svg_4" rx="94.49985" ry="94" stroke-width="2" stroke="#666666" filter="url(#svg_4_blur)"/>
+  <ellipse fill="none" cx="127" cy="127" id="svg_3" rx="47" ry="47" stroke="#b2b2b2" stroke-width="2" filter="url(#svg_3_blur)"/>
+ </g>
+</svg>

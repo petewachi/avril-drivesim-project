@@ -1,0 +1,125 @@
+Scenario 1 No Secondary Task 
+            Df Sum Sq Mean Sq F value Pr(>F)  
+Groups       2  24.88  12.440   5.918 0.0137 *
+Residuals   14  29.43   2.102                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+  Tukey multiple comparisons of means
+    95% family-wise confidence level
+
+Fit: aov(formula = reaction_time ~ Groups, data = reaction_merged_min[which(reaction_merged_min$scenario_no == 1 & reaction_merged_min$secondaryTask2 == "0"), ])
+
+$Groups
+                    diff       lwr        upr     p adj
+Mild-Dynamic   -1.599364 -5.562896  2.3641688 0.5554110
+Strong-Dynamic -2.660164 -4.706923 -0.6134043 0.0112171
+Strong-Mild    -1.060800 -5.217788  3.0961879 0.7854740
+
+Scenario 1 Typing 
+            Df Sum Sq Mean Sq F value Pr(>F)
+Groups       2   1.69   0.843   0.214   0.81
+Residuals   13  51.17   3.936               
+  Tukey multiple comparisons of means
+    95% family-wise confidence level
+
+Fit: aov(formula = reaction_time ~ Groups, data = reaction_merged_min[which(reaction_merged_min$scenario_no == 1 & reaction_merged_min$secondaryTask2 == "H"), ])
+
+$Groups
+                  diff       lwr      upr     p adj
+Mild-Dynamic   -0.7783 -3.950354 2.393754 0.7967908
+Strong-Dynamic -0.4539 -3.625954 2.718154 0.9247744
+Strong-Mild     0.3244 -2.988702 3.637502 0.9639253
+
+Scenario 2 No Secondary Task 
+            Df Sum Sq Mean Sq F value Pr(>F)  
+Groups       2  12.42   6.209    3.14 0.0676 .
+Residuals   18  35.59   1.977                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+  Tukey multiple comparisons of means
+    95% family-wise confidence level
+
+Fit: aov(formula = reaction_time ~ Groups, data = reaction_merged_min[which(reaction_merged_min$scenario_no == 2 & reaction_merged_min$secondaryTask2 == "0"), ])
+
+$Groups
+                      diff       lwr       upr     p adj
+Mild-Dynamic   -1.52840909 -3.623774 0.5669557 0.1786147
+Strong-Dynamic -1.54707576 -3.368423 0.2742718 0.1042759
+Strong-Mild    -0.01866667 -2.335180 2.2978462 0.9997669
+
+Scenario 2 Typing 
+            Df Sum Sq Mean Sq F value Pr(>F)  
+Groups       2  14.05   7.027   4.084 0.0356 *
+Residuals   17  29.25   1.721                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+  Tukey multiple comparisons of means
+    95% family-wise confidence level
+
+Fit: aov(formula = reaction_time ~ Groups, data = reaction_merged_min[which(reaction_merged_min$scenario_no == 2 & reaction_merged_min$secondaryTask2 == "H"), ])
+
+$Groups
+                    diff        lwr      upr     p adj
+Mild-Dynamic    1.887833  0.1500875 3.625579 0.0322017
+Strong-Dynamic  0.244000 -1.7468380 2.234838 0.9471331
+Strong-Mild    -1.643833 -3.8160157 0.528349 0.1576199
+
+Scenario 3 No Secondary Task 
+            Df Sum Sq Mean Sq F value Pr(>F)
+Groups       2   4.51   2.256   0.704   0.51
+Residuals   15  48.04   3.203               
+  Tukey multiple comparisons of means
+    95% family-wise confidence level
+
+Fit: aov(formula = reaction_time ~ Groups, data = reaction_merged_min[which(reaction_merged_min$scenario_no == 3 & reaction_merged_min$secondaryTask2 == "0"), ])
+
+$Groups
+                     diff       lwr      upr     p adj
+Mild-Dynamic   -0.7976889 -3.390558 1.795180 0.7092402
+Strong-Dynamic -1.1753889 -3.968854 1.618076 0.5327727
+Strong-Mild    -0.3777000 -3.496080 2.740680 0.9470921
+
+Scenario 3 Typing 
+            Df Sum Sq Mean Sq F value Pr(>F)
+Groups       2  0.605  0.3026   0.477  0.628
+Residuals   18 11.418  0.6343               
+  Tukey multiple comparisons of means
+    95% family-wise confidence level
+
+Fit: aov(formula = reaction_time ~ Groups, data = reaction_merged_min[which(reaction_merged_min$scenario_no == 3 & reaction_merged_min$secondaryTask2 == "H"), ])
+
+$Groups
+                       diff        lwr       upr     p adj
+Mild-Dynamic   -0.430181818 -1.6170085 0.7566449 0.6319133
+Strong-Dynamic  0.005984848 -1.0256369 1.0376066 0.9998791
+Strong-Mild     0.436166667 -0.8759196 1.7482529 0.6785993
+
+Scenario 4 No Secondary Task 
+            Df Sum Sq Mean Sq F value Pr(>F)
+Groups       2   3.00   1.498   0.339  0.717
+Residuals   17  75.02   4.413               
+  Tukey multiple comparisons of means
+    95% family-wise confidence level
+
+Fit: aov(formula = reaction_time ~ Groups, data = reaction_merged_min[which(reaction_merged_min$scenario_no == 4 & reaction_merged_min$secondaryTask2 == "0"), ])
+
+$Groups
+                     diff       lwr      upr     p adj
+Mild-Dynamic   -0.8190556 -3.659247 2.021136 0.7436757
+Strong-Dynamic -0.7211556 -3.726932 2.284621 0.8137060
+Strong-Mild     0.0979000 -3.165232 3.361032 0.9967401
+
+Scenario 4 Typing 
+            Df Sum Sq Mean Sq F value Pr(>F)
+Groups       2   2.04   1.019   0.485  0.624
+Residuals   16  33.62   2.101               
+  Tukey multiple comparisons of means
+    95% family-wise confidence level
+
+Fit: aov(formula = reaction_time ~ Groups, data = reaction_merged_min[which(reaction_merged_min$scenario_no == 4 & reaction_merged_min$secondaryTask2 == "H"), ])
+
+$Groups
+                   diff       lwr      upr     p adj
+Mild-Dynamic   -0.60525 -2.764645 1.554145 0.7535398
+Strong-Dynamic -0.76125 -3.175527 1.653027 0.7002225
+Strong-Mild    -0.15600 -3.012612 2.700612 0.9891203
