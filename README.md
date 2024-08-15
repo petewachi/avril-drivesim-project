@@ -50,11 +50,11 @@ In semi-autonomous vehicles, the transition of control from the vehicle to the h
   - **Sudden Obstacle Scenario:** An unexpected obstacle, such as an animal crossing the road, required immediate driver intervention.
   - **Merging Vehicle Scenario:** A vehicle suddenly merged into the driver’s lane, demanding quick evasive action.
   - **Distracted Driving Scenario:** Participants were engaged in a secondary task (typing on a smartphone) to simulate a distracted driving condition during which a takeover request was issued.
-- **Alert Design:** The study compared two types of alerts:
 <p align="center">
   <img src="images\Dashboard-Takeover-Strong-Red.PNG" alt="Dashboard Driver Alert" style="width: 540px">
 </p>
 
+- **Alert Design:** The study compared two types of alerts:
   - **Static Alerts:** A single, consistent alert was delivered regardless of the driver’s cognitive state.
   - **Dynamic Alerts:** Alerts varied in intensity and modality (visual and auditory) based on real-time assessments of the driver’s cognitive load, such as distraction levels or engagement with secondary tasks.
 - **Cognitive States:** The research classified cognitive states into two categories:
