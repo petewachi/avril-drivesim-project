@@ -26,7 +26,7 @@ In semi-autonomous vehicles, the transition of control from the vehicle to the h
 ### Human Factors and Tools
 
 - **Participants:** The study recruited 40 participants, aged 18 to 54, with at least one year of driving experience. The experiments were conducted in the Autonomous Vehicle Research and Intelligence Laboratory (AVRIL) at the University of Waterloo. Participants were exposed to a variety of driving scenarios to assess their responses to different alert systems.
-- **Driving Simulator:** The primary experimental tool was VI-Grade’s high-fidelity STATIC driving simulator, designed to replicate real-world driving conditions with precision. This simulator was integrated with MATLAB Simulink for ADAS control models, and VI-WorldSim was used to create diverse driving scenarios that reflected realistic road conditions.
+- **Driving Simulator:** The primary experimental tool was [VI-Grade](https://www.vi-grade.com/)’s high-fidelity STATIC driving simulator, designed to replicate real-world driving conditions with precision. This simulator was integrated with MATLAB Simulink for ADAS control models, and VI-WorldSim was used to create diverse driving scenarios that reflected realistic road conditions.
 
 <p align="center">
   <img src="images\Simulink AutoPilot Model.png" alt="Simulink AutoPilot Model" style="width: 540px">
